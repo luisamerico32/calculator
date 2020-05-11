@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(51, 51, 212);
+    background-color: rgb(104, 104, 105);
     text-align: center;
 
 }
@@ -29,7 +29,7 @@ div#numbers input#num {
 div#numbers {    
     width: 100%;
     height: 100%;   
-    position: relative;     
+    position: relative;
 }
 
 div#op {
@@ -41,7 +41,6 @@ div#op {
     height: 20px;
     text-align: center;
     margin: auto;
-    margin-bottom: -2px;
 }
 
 div#boxn {
@@ -56,6 +55,13 @@ input {
     height: 40px;    
     padding: 5px;
     margin: 12px;
+    transition: .5s;
+    border-style: none;
+    border-radius: 5px;
+}
+
+input:hover {
+    background-color: rgb(134, 134, 134);
 }
 
 input#d {
