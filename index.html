@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <section id="container">
+        
+        <div id="numbers">
+            <div id="op"></div>
+            <input type="number" name="num" id="num" value="">
+            <div id="boxn">
+                <ul id="up">
+                    <input type="button" value="CE" id="delete" onclick="del()">
+                    <input type="button" value="Enter" id="entrar" onclick="calcular()">                    
+                </ul>
+                <ul>
+                    <input type="button" value="1" id="1" onclick="adicionar(1)">
+                    <input type="button" value="2" id="2" onclick="adicionar(2)">
+                    <input type="button" value="3" id="3" onclick="adicionar(3)">
+                    <input type="button" value="*" id="*" onclick="opera('*')">
+                </ul>
+                <ul>
+                    <input type="button" value="4" id="4" onclick="adicionar(4)">
+                    <input type="button" value="5" id="5" onclick="adicionar(5)">
+                    <input type="button" value="6" id="6" onclick="adicionar(6)">
+                    <input type="button" value="-" id="-" onclick="opera('-')">
+                </ul>
+                <ul>
+                    <input type="button" value="7" id="7" onclick="adicionar(7)">
+                    <input type="button" value="8" id="8" onclick="adicionar(8)">
+                    <input type="button" value="9" id="9" onclick="adicionar(9)">
+                    <input type="button" value="+" id="+" onclick="opera('+')">
+                </ul>
+                <ul>
+                    <input type="button" value="0" id="0" onclick="adicionar(0)">
+                    <input type="button" value="/" id="d" onclick="opera('/')">                   
+                </ul>                
+            </div>
+                
+        </div>
+
+    </section>
+    
+    <script src="/script/operacao.js"></script>
+</body>
+</html>
